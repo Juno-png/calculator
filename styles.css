@@ -1,37 +1,80 @@
-body {
+.container{
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: column;
+    height: 100vh;
+    width: 100vh;
+    padding: 10px;
+    margin-top: 50px;
+}
+
+body {
     width: 100vw;
     height: 100vh;
+    background: #eeeae0;
+}
+
+button {
+    cursor: pointer;
 }
 
 .calculator{
-    background-color: #465C69;
-    border: 5px solid #500525;
+    width: 400px;
+    background-color: #67818a;
+    border: 3px solid #500525;
     border-radius: 10px;
-}   
+    padding: 20px;
+}
+
+.screen{
+    padding: 10px 20px;
+    border: 2px solid #1F0812;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    text-align: right;
+    word-wrap: break-word;
+    word-break: break-all;
+}
+
+.previous{
+    font-size: 20px;
+    min-height: 32px;
+}
+
+.current{
+    font-size: 30px;
+    min-height: 64px;
+}
+
+.buttons-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+}
 
 .btn{
-    height: 75px;
-    width: 75px;
-    font-size: 50px;
-    margin: 15px;
-    color: #A18276;
+    padding: 10px;
+    font-size: 40px;
+    color: #1F0812;
+    align-items: center;
+    justify-content: center;
+}
+
+.span-2 {
+    grid-column: span 2;
 }
 
 .number{
-    border: 1px solid #1F0812;
-    border-radius: 10px;
+    border: 3px solid #1F0812;
+    border-radius: 5px;
 }
 
 .number:hover{
-    background-color: #EBEBD3;
+    background-color: #d6d6ae;
 }
 
 .operator{
-    border: 1px solid #5F1A37;
+    border: 3px solid #5F1A37;
     border-radius: 10px;
 }
 
@@ -40,7 +83,7 @@ body {
 }
 
 .decimal{
-    border: 1px solid #5F1A37;
+    border: 3px solid #5F1A37;
     border-radius: 10px;
 }
 
@@ -49,7 +92,7 @@ body {
 }
 
 .equal{
-    border: 1px solid #5F1A37;
+    border: 3px solid #5F1A37;
     border-radius: 10px;
 }
 
@@ -58,36 +101,21 @@ body {
 }
 
 .clear{
-    border: 1px solid #EBEBD3;
+    border: 3px solid #1F0812;
     border-radius: 10px;
+    background-color: #4b90a7;
 }
 
 .clear:hover{
-    background-color: #5F1A37;
+    background-color: #3d778a;
 }
 
-.first-row{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
+.delete{
+    border: 3px solid #1F0812;
+    border-radius: 10px;
+    background-color: #992d5a;
 }
 
-#screen{
-    width: 300px;
-    border: 2px solid #1F0812;
-    height: 75px;
-    margin: 15px;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    align-items: flex-end;
-}
-
-.previous{
-    font-size: 20px;
-}
-
-.current{
-    font-size: 30px;
+.delete:hover{
+    background-color: #74173e;
 }
